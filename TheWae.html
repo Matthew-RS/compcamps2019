@@ -7,6 +7,32 @@
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet.css">
   </head>
   <body class="body3">
+    <audio id="knuckles" preload="auto">
+      <source src="knuckles.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    var uganda = [];
+
+    async function deway(){
+      for (i = 0; i <= 10000; i++){
+        var img = document.createElement("IMG");
+        img.setAttribute("src", "img/DeWay.jfif");
+        img.setAttribute("alt", "The Pulpit Rock")
+        uganda.push("img")
+        document.body.appendChild(img);
+        const audio = document.getElementById("knuckles");
+        audio.play()
+        await sleep(120);
+      }
+    }
+
+    deway();
+    </script>
+<!-- <img class="photo3" src="img/DeWay.jfif"/>
 <img class="photo3" src="img/DeWay.jfif"/>
 <img class="photo3" src="img/DeWay.jfif"/>
 <img class="photo3" src="img/DeWay.jfif"/>
@@ -35,6 +61,5 @@
 <img class="photo3" src="img/DeWay.jfif"/>
 <img class="photo3" src="img/DeWay.jfif"/>
 <img class="photo3" src="img/DeWay.jfif"/>
-<img class="photo3" src="img/DeWay.jfif"/>
-<img class="photo3" src="img/DeWay.jfif"/>
+<img class="photo3" src="img/DeWay.jfif"/> -->
   </body>
